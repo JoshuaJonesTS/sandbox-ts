@@ -36,10 +36,10 @@ const PlanetColumnConfigs = [
     },
     {
         name: "moon",
-        title: "Moon",
+        title: "Largest Moon",
         objectFieldsToDisplay: ["largestMoon.name"],
         objectFieldsDelimiter: "",
-        width: 100,
+        width: 110,
         useNestedObject: true
     }
 ];
