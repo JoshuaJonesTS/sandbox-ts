@@ -42,7 +42,7 @@ const PlanetListWithSearch = (data = { allPlanets: [...samplePlanetData] }, load
     return(
         <TableWithSearch
             rawData={[...samplePlanetData]}
-            loading={loading}
+            loading={false}
             error={error}
             searchFieldOptions={PlanetSearchFieldOptions}
             columnConfigs={PlanetColumnConfigs}
