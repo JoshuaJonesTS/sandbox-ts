@@ -40,42 +40,109 @@ const samplePlanetData = [
     {
         id: 1,
         name: "Mercury",
-        type: "rocky"
+        type: "rocky",
+        largestMoon: null
     },
     {
         id: 2,
         name: "Venus",
-        type: "rocky"
+        type: "rocky",
+        largestMoon: null
     },
     {
         id: 3,
         name: "Earth",
-        type: "rocky"
+        type: "rocky",
+        largestMoon: [
+            {
+                name: "Moon",
+                size: [
+                    {
+                        diameter: 2159.1, // miles
+                        mass: 7.35e22 // kg
+                    }
+                ],
+            }
+        ]
     },
     {
         id: 4,
         name: "Mars",
-        type: "rocky"
+        type: "rocky",
+        largestMoon: [
+            {
+                name: "Phobos",
+                size: {
+                    diameter: 14.002,
+                    mass: 10.6e15
+                }
+            }
+        ]
     },
     {
         id: 5,
         name: "Jupiter",
-        type: "gas"
+        type: "gas",
+        largestMoon: [
+            {
+                name: "Ganymede",
+                size: [
+                    {
+                        diameter: 3273.5,
+                        mass: 1.48e23
+                    }
+                ]
+            }
+
+        ]
     },
     {
         id: 6,
         name: "Saturn",
-        type: "gas"
+        type: "gas",
+        largestMoon: [
+            {
+                name: "Titan",
+                size: [
+                    {
+                        diameter: 3199.7,
+                        mass: 1.34e23
+                    }
+                ]
+            }
+        ]
     },
     {
         id: 7,
         name: "Uranus",
-        type: "gas"
+        type: "gas",
+        largestMoon: [
+            {
+                name: "Titania",
+                size: [
+                    {
+                        diameter: 970.78,
+                        mass: 3.4e21
+                    }
+                ]
+            }
+        ]
     },
     {
         id: 8,
         name: "Neptune",
-        type: "gas"
+        type: "gas",
+        largestMoon: [
+            {
+                name: "Triton",
+                size: [
+                    {
+                        diameter: 1681.9,
+                        mass: 2.14e22
+                    }
+                ]
+            }
+        ]
     },
 ];
 
