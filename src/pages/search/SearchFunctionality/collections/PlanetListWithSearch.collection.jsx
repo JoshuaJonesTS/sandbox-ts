@@ -4,15 +4,15 @@ import React from 'react';
 import TableWithSearch from '../../../../blockGroups/table/TableWithSearch/TableWithSearch.blockgroup';
 
 const PlanetSearchFieldOptions = [
+    { value: "name", title: "Name" },
     { value: "id", title: "ID" },
-    { value: "name", title: "Name" }
 ];
 
 const PlanetColumnConfigs = [
     {
         name: "id",
         title: "ID",
-        objectFieldsTODisplay: ["id"],
+        objectFieldsToDisplay: ["id"],
         objectFieldsDelimiter: "",
         width: 100,
         useNestedObject: false
@@ -20,7 +20,7 @@ const PlanetColumnConfigs = [
     {
         name: "name",
         title: "Name",
-        objectFieldsTODisplay: ["name"],
+        objectFieldsToDisplay: ["name"],
         objectFieldsDelimiter: "",
         width: 100,
         useNestedObject: false
