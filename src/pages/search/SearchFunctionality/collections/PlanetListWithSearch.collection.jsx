@@ -6,6 +6,7 @@ import TableWithSearch from '../../../../blockGroups/table/TableWithSearch/Table
 const PlanetSearchFieldOptions = [
     { value: "name", title: "Name" },
     { value: "id", title: "ID" },
+    { value: "type", title: "Type" },
 ];
 
 const PlanetColumnConfigs = [
@@ -24,41 +25,57 @@ const PlanetColumnConfigs = [
         objectFieldsDelimiter: "",
         width: 100,
         useNestedObject: false
+    },
+    {
+        name: "type",
+        title: "Type",
+        objectFieldsToDisplay: ["type"],
+        objectFieldsDelimiter: "",
+        width: 100,
+        useNestedObject: false
     }
 ];
 
 const samplePlanetData = [
     {
         id: 1,
-        name: "Mercury"
+        name: "Mercury",
+        type: "rocky"
     },
     {
         id: 2,
-        name: "Venus"
+        name: "Venus",
+        type: "rocky"
     },
     {
         id: 3,
-        name: "Earth"
+        name: "Earth",
+        type: "rocky"
     },
     {
         id: 4,
-        name: "Mars"
+        name: "Mars",
+        type: "rocky"
     },
     {
         id: 5,
-        name: "Jupiter"
+        name: "Jupiter",
+        type: "gas"
     },
     {
         id: 6,
-        name: "Saturn"
+        name: "Saturn",
+        type: "gas"
     },
     {
         id: 7,
-        name: "Uranus"
+        name: "Uranus",
+        type: "gas"
     },
     {
         id: 8,
-        name: "Neptune"
+        name: "Neptune",
+        type: "gas"
     },
 ];
 
