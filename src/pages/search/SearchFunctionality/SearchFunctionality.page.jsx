@@ -1,12 +1,12 @@
 import React from 'react';
 
 // apollo
-import { ALL_CUSTOMERS_QUERY } from '../../../graphql/customer/customer.queries';
+// import { ALL_CUSTOMERS_QUERY } from '../../../graphql/customer/customer.queries';
 import { ALL_JOBS_QUERY } from '../../../graphql/job/job.queries';
 // collections
-import CustomerListWithSearch from './collections/CustomerListWithSearch.collection';
-import CustomerList from './collections/CustomerList.collection';
-import JobListWithSearch from './collections/JobListWithSearch.collection';
+// import CustomerListWithSearch from './collections/CustomerListWithSearch.collection';
+// import CustomerList from './collections/CustomerList.collection';
+// import JobListWithSearch from './collections/JobListWithSearch.collection';
 import PlanetListWithSearch from './collections/PlanetListWithSearch.collection';
 
 // wrappers
