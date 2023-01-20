@@ -36,8 +36,16 @@ const PlanetColumnConfigs = [
     },
     {
         name: "moon",
-        title: "Largest Moon",
+        title: "Largest Moon (LM)",
         objectFieldsToDisplay: ["largestMoon.name"],
+        objectFieldsDelimiter: "",
+        width: 110,
+        useNestedObject: true
+    },
+    {
+        name: "diameter",
+        title: "LM Diameter",
+        objectFieldsToDisplay: ["largestMoon.size.diameter"],
         objectFieldsDelimiter: "",
         width: 110,
         useNestedObject: true
@@ -51,12 +59,10 @@ const samplePlanetData = [
         type: "rocky",
         largestMoon: {
             name: null,
-            size: [
-                {
-                    diameter: null,
-                    mass: null
-                }
-            ],
+            size: {
+                diameter: null,
+                mass: null
+            }
         }
     },
     {
@@ -65,12 +71,10 @@ const samplePlanetData = [
         type: "rocky",
         largestMoon: {
             name: null,
-            size: [
-                {
-                    diameter: null,
-                    mass: null
-                }
-            ],
+            size: {
+                diameter: null,
+                mass: null
+            }
         }
     },
     {
@@ -79,12 +83,10 @@ const samplePlanetData = [
         type: "rocky",
         largestMoon: {
             name: "Moon",
-            size: [
-                {
-                    diameter: 2159.1, // miles
-                    mass: 7.35e22 // kg
-                }
-            ],
+            size: {
+                diameter: 2159.1, // miles
+                mass: 7.35e22 // kg
+            }
         }
     },
     {
@@ -105,12 +107,10 @@ const samplePlanetData = [
         type: "gas",
         largestMoon: {
             name: "Ganymede",
-            size: [
-                {
-                    diameter: 3273.5,
-                    mass: 1.48e23
-                }
-            ]
+            size: {
+                diameter: 3273.5,
+                mass: 1.48e23
+            }
         }
     },
     {
@@ -119,12 +119,10 @@ const samplePlanetData = [
         type: "gas",
         largestMoon: {
             name: "Titan",
-            size: [
-                {
-                    diameter: 3199.7,
-                    mass: 1.34e23
-                }
-            ]
+            size: {
+                diameter: 3199.7,
+                mass: 1.34e23
+            }
         }
     },
     {
@@ -133,12 +131,10 @@ const samplePlanetData = [
         type: "gas",
         largestMoon: {
             name: "Titania",
-            size: [
-                {
-                    diameter: 970.78,
-                    mass: 3.4e21
-                }
-            ]
+            size: {
+                diameter: 970.78,
+                mass: 3.4e21
+            }
         }
     },
     {
@@ -147,12 +143,10 @@ const samplePlanetData = [
         type: "gas",
         largestMoon: {
             name: "Triton",
-            size: [
-                {
-                    diameter: 1681.9,
-                    mass: 2.14e22
-                }
-            ]
+            size: {
+                diameter: 1681.9,
+                mass: 2.14e22
+            }
         }
     },
 ];
