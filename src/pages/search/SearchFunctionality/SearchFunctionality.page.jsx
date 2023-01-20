@@ -7,6 +7,7 @@ import { ALL_JOBS_QUERY } from '../../../graphql/job/job.queries';
 import CustomerListWithSearch from './collections/CustomerListWithSearch.collection';
 import CustomerList from './collections/CustomerList.collection';
 import JobListWithSearch from './collections/JobListWithSearch.collection';
+import PlanetListWithSearch from './collections/PlanetListWithSearch.collection';
 
 // wrappers
 import WithGqlQuery from '../../../wrappers/gql/WithGqlQuery/WithGqlQuery.wrapper';
@@ -16,7 +17,7 @@ const SearchFunctionality = () => {
     return (<div>
 
         {/* Collections using the Abastract BlockGroups */}
-        <WithGqlQuery component={JobListWithSearch} query={ALL_JOBS_QUERY} />
+        <WithGqlQuery component={PlanetListWithSearch} query={ALL_JOBS_QUERY} />
         {/* Basic Collections 
         <WithGqlQuery component={CustomerListWithSearch} query={ALL_CUSTOMERS_QUERY} />
         <WithGqlQuery component={CustomerList} query={ALL_CUSTOMERS_QUERY} />
