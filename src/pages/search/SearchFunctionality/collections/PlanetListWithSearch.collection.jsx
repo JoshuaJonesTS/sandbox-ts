@@ -14,7 +14,7 @@ const PlanetListWithSearch = (data = { allPlanets: [] }, loading, error) => {
             rawData={data.allPlanets}
             loading={loading}
             error={error}
-            fieldOptions={}
+            fieldOptions={PlanetSearchFieldOptions}
             columnConfigs={}
         />
     )
