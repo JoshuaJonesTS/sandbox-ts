@@ -44,10 +44,10 @@ const PlanetColumnConfigs = [
     },
     {
         name: "diameter",
-        title: "LM Diameter",
+        title: "LM Diameter (miles)",
         objectFieldsToDisplay: ["largestMoon.size.diameter"],
         objectFieldsDelimiter: "",
-        width: 100,
+        width: 150,
         useNestedObject: true
     }
 ];
