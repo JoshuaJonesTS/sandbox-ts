@@ -39,7 +39,7 @@ const PlanetColumnConfigs = [
         title: "Largest Moon (LM)",
         objectFieldsToDisplay: ["largestMoon.name"],
         objectFieldsDelimiter: "",
-        width: 110,
+        width: 142,
         useNestedObject: true
     },
     {
@@ -47,7 +47,7 @@ const PlanetColumnConfigs = [
         title: "LM Diameter",
         objectFieldsToDisplay: ["largestMoon.size.diameter"],
         objectFieldsDelimiter: "",
-        width: 110,
+        width: 100,
         useNestedObject: true
     }
 ];
