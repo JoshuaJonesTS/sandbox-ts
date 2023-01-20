@@ -27,10 +27,21 @@ const PlanetColumnConfigs = [
     }
 ];
 
-const PlanetListWithSearch = (data = { allPlanets: [] }, loading, error) => {
+const samplePlanetData = [
+    {
+        id: 1,
+        name: "Mercury"
+    },
+    {
+        id: 2,
+        name: "Venus"
+    }
+];
+
+const PlanetListWithSearch = (data = { allPlanets: [...samplePlanetData] }, loading, error) => {
     return(
         <TableWithSearch
-            rawData={data.allPlanets}
+            rawData={[...samplePlanetData]}
             loading={loading}
             error={error}
             searchFieldOptions={PlanetSearchFieldOptions}
