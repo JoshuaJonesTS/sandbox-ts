@@ -8,6 +8,25 @@ const PlanetSearchFieldOptions = [
     { value: "name", title: "Name" }
 ];
 
+const PlanetColumnConfigs = [
+    {
+        name: "id",
+        title: "ID",
+        objectFieldTODisplay: ["id"],
+        objectFieldsDelimiter: "",
+        width: 100,
+        useNestedObject: false
+    },
+    {
+        name: "name",
+        title: "Name",
+        objectFieldTODisplay: ["name"],
+        objectFieldsDelimiter: "",
+        width: 100,
+        useNestedObject: false
+    }
+];
+
 const PlanetListWithSearch = (data = { allPlanets: [] }, loading, error) => {
     return(
         <TableWithSearch
@@ -15,7 +34,7 @@ const PlanetListWithSearch = (data = { allPlanets: [] }, loading, error) => {
             loading={loading}
             error={error}
             fieldOptions={PlanetSearchFieldOptions}
-            columnConfigs={}
+            columnConfigs={PlanetColumnConfigs}
         />
     )
 }
